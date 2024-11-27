@@ -16,7 +16,7 @@ Repositorio de Entrega Final, Proyecto Final Ingenieria Web - INF3245
 
 
 ## EF1: Implementar las funcionalidades propuestas en la EP1.
--Personalizar perfil usuario:  Esta funcionalidad permite a los usuarios configurar y personalizar su perfil en la aplicación según sus preferencias y necesidades. Los usuarios pueden ingresar y modificar información personal, como su nombre, foto de perfil, información de contacto, dirección, y otros detalles relevantes.
+- Personalizar perfil usuario:  Esta funcionalidad permite a los usuarios configurar y personalizar su perfil en la aplicación según sus preferencias y necesidades. Los usuarios pueden ingresar y modificar información personal, como su nombre, foto de perfil, información de contacto, dirección, y otros detalles relevantes.
 
 - Lista de mascotas del usuario Esta funcionalidad proporciona una vista general de todas las mascotas registradas por el usuario en la aplicación. La lista muestra un resumen básico de cada mascota, como su nombre, foto, y algunos detalles importantes (edad, raza). Desde esta lista, los usuarios pueden acceder rápidamente al perfil completo de cada mascota para ver más detalles o realizar modificaciones.
 
