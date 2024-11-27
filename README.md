@@ -48,7 +48,7 @@ Implementación del backend de una aplicación web con una API REST, usando Node
  POST /logout: Responde con éxito al cierre de sesión.
 
 ## Usuarios 
-- POST /usuario: Registra un nuevo usuario verificando: Campos requeridos.
+POST /usuario: Registra un nuevo usuario verificando: Campos requeridos.
 
 GET /usuario/:id: Devuelve los datos del usuario solicitado si el token es válido y el usuario autenticado tiene permisos para verlo.
 
