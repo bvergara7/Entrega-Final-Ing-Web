@@ -44,24 +44,29 @@ entrada si es necesario.
 Implementación del backend de una aplicación web con una API REST, usando Node.js con el framework Express. También se conecta a una base de datos para realizar diversas operaciones. Aquí te doy un desglose de su contenido y funcionalidades principales:
 ## Autenticación 
  POST /login: Verifica credenciales (email y contraseña) contra la base de datos. Si son válidas, genera y retorna un token JWT junto con la información del usuario.
+ 
  POST /logout: Responde con éxito al cierre de sesión.
 
 ## Usuarios 
 - POST /usuario: Registra un nuevo usuario verificando: Campos requeridos.
 
 GET /usuario/:id: Devuelve los datos del usuario solicitado si el token es válido y el usuario autenticado tiene permisos para verlo.
+
 PUT /usuario/:id: Permite al usuario autenticado actualizar su información (nombre, email, contraseña, foto de perfil, región).
 
 ##Mascotas
-POST /mascota: Crea un registro de mascota asociado al usuario autenticado. Genera un código único de vinculación.
-Requiere nombre y especie.
+POST /mascota: Crea un registro de mascota asociado al usuario autenticado. Genera un código único de vinculación. Requiere nombre y especie.
+
 GET /mascotas: Devuelve la lista de mascotas asociadas al usuario autenticado.
+
 GET /mascotas/:id: Devuelve información detallada de una mascota específica si pertenece al usuario autenticado.
+
 PUT /mascotas/:id: Actualiza los datos de una mascota del usuario autenticado.
 POST /mascotas/vincular: Permite vincular una mascota existente a un usuario utilizando el codigoVinculacion.
 
 ## Eventos: 
 POST /evento: Crea un evento asociado a una mascota del usuario autenticado (por ejemplo, consultas veterinarias).
+
 GET /eventos/:idMascota: Devuelve los eventos relacionados con una mascota específica, siempre que pertenezca al usuario autenticado.
 
 
