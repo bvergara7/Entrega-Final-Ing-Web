@@ -41,7 +41,7 @@ entrada si es necesario.
 
 
 ## EF3 Implementar el backend de la aplicación, con enfoque de APIREST, y utilizando el framework y la base de datos seleccionadas con conexión entre ambos: 
-Implementación del backend de una aplicación web con una API REST, usando Node.js con el framework Express. También se conecta a una base de datos para realizar diversas operaciones. Aquí te doy un desglose de su contenido y funcionalidades principales:
+Implementación del backend de una aplicación web con una API REST, usando Node.js con el framework Express. También se conecta a una base de datos para realizar diversas operaciones.
 ## Autenticación 
  POST /login: Verifica credenciales (email y contraseña) contra la base de datos. Si son válidas, genera y retorna un token JWT junto con la información del usuario.
  
