@@ -1,0 +1,176 @@
+GET LOGIN
+
+{
+  "email": "bvergara2003@gmail.com",
+  "password": "benja123"
+}
+
+
+GET y DELETE USUARIOS 
+
+{
+  "email": "bvergara2003@gmail.com",
+  "password": "benja123"
+}
+
+
+
+Header
+
+{
+  authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJidmVyZ2FyYTIwMDNAZ21haWwuY29tIiwiaWF0IjoxNzMxNzAzOTAzLCJleHAiOjE3MzE3MDc1MDN9.u_x4STAHdX28LprH7TW1pV4kWiGzUzKpwXKq3JIRTck"
+  
+}
+
+
+medicos
+{
+  "nombre": "Dr. Juan Pérez",
+  "especialidad": "Cardiología",
+  "calificacion": 4.8,
+  "horario": "Lunes a Viernes de 8:00 a 14:00"
+}
+
+
+citas
+{
+  "fecha_hora": "2024-11-20T10:30:00Z",
+  "medico_id": 1
+}
+
+PUT citas
+
+{
+  "fecha_hora": "2024-11-25T15:00:00Z",
+  "estado": "completada"
+}
+
+
+
+
+
+GET LOGIN
+
+{
+  "email": "juan@gmail.com",
+  "password": "juanperez123"
+}
+
+
+
+
+
+Crear Usuario
+
+{
+  "nombre": "Juan Pérez",
+  "email": "juan@example.com",
+  "contraseña": "contraseña123",
+  "idRegion": 1,
+  "idComuna": 5
+}
+
+
+
+
+PUT Act Usuario
+{
+  
+  "email": "juan@gmail.com",
+  "password": "juanperez123"
+
+
+
+}
+
+
+
+Header
+
+{
+  authorization: Bearer idtoken
+  
+}
+
+
+
+MASCOTAS:
+
+
+CREAR MASCOTAS(POST):
+{
+  "nombre": "Lol",
+  "especie": "Perro",
+  "raza": "Golden Retriever",
+  "fecha": "2024-01-01",
+  "imgMascota": "http://example.com/mascota.jpg"
+}
+
+
+
+CODIGOVINCULACION: di1llrwwput
+
+
+
+OBTENER MASCOTAS USUARIO
+
+ {
+    "id": 1,
+    "codigoVinculacion": "di1llrwwput",
+    "fecha": "2024-01-01",
+    "idCuidador": 16
+  }
+
+
+POST CREAR EVENTO
+{
+  "titulo": "Vacunación",
+  "fecha": "2024-02-15",
+  "descripcion": "Primera dosis de vacunas",
+  "idMascota": 1
+}
+
+
+GET MOSTRAR EVENTOS
+
+{
+  "titulo": "Vacunación",
+  "fecha": "2024-02-15",
+  "descripcion": "Primera dosis de vacunas",
+  "idMascota": 1
+}
+
+
+
+
+
+ GET VER REGIONES
+  {
+    "idRegion": 1,
+    "nombreRegion": "Región Metropolitana"
+  }
+
+
+HACER POST CREAR REGION Y COMUNA
+{
+  "idRegion": 1,
+  "nombreRegion": "Región Metropolitana"
+}
+
+
+
+
+
+
+usuario: 
+"email": "juan1@gmail.com",
+  "contraseña": "123",
+
+
+{
+  "nombre": "Juan Pérez",
+  "email": "juan1@gmail.com",
+  "contraseña": "123",
+  "idRegion": 1
+}
+

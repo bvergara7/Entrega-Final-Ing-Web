@@ -1,0 +1,64 @@
+.registro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a0c5ff, #ffc5d9, #c5ffc7);
+  }
+  
+  .registro-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center; 
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input, .input-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .custom-button {
+    background-color: #ffbe0b; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para transformaciones y sombras */
+  }
+  
+  .custom-button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Agrega sombra al botón */
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .centered-text {
+    text-align: center; /* Centrar texto */
+  }
+  
+  .centered-button {
+    display: block; /* Para centrar el botón */
+    margin: 0 auto; /* Margen automático para centrar */
+  }
+  

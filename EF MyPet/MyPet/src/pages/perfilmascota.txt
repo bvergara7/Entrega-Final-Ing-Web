@@ -1,0 +1,125 @@
+import { IonContent, IonPage } from '@ionic/react';
+import './style/perfilMascota.css';
+import Footer from '../components/footer';
+import React, { useState, useEffect } from 'react';
+import { useHistory, useParams } from 'react-router-dom';
+import Header from '../components/encabezado';
+
+interface Mascota {
+  id: number;
+  nombre: string;
+  raza: string;
+  especie: string;
+  fecha: string;
+  peso: string;
+  imgMascota: string;
+}
+
+const PerfilMascota: React.FC = () => {
+  const history = useHistory();
+  const [mascota, setMascota] = useState<Mascota | null>(null);
+
+  useEffect(() => {
+    fetchMascotaData();
+
+    // Escuchar eventos de actualización
+    const handleMascotaUpdate = (event: CustomEvent) => {
+      setMascota(event.detail.mascota);
+    };
+
+    window.addEventListener('mascotaUpdated', handleMascotaUpdate as EventListener);
+
+    return () => {
+      window.removeEventListener('mascotaUpdated', handleMascotaUpdate as EventListener);
+    };
+  }, []);
+
+  const fetchMascotaData = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) throw new Error('No hay token de autenticación');
+
+      const response = await fetch('http://localhost:3000/mascotas', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (!response.ok) throw new Error('Error al obtener mascota');
+
+      const mascotas = await response.json();
+      if (mascotas.length > 0) {
+        setMascota(mascotas[0]); // Tomamos la primera mascota
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  if (!mascota) {
+    return (
+      <IonPage>
+        <Header />
+        <IonContent>
+          <div className="contenedor-unificado">
+            <p>Cargando datos de la mascota...</p>
+          </div>
+        </IonContent>
+        <Footer />
+      </IonPage>
+    );
+  }
+
+  return (
+    <IonPage>
+      <Header />
+      <IonContent>
+        <div className="contenedor-unificado">
+          <h2>Perfil de la Mascota</h2>
+          <img
+            className="imgPerfil"
+            src={mascota.imgMascota || "https://via.placeholder.com/150"}
+            alt={mascota.nombre}
+          />
+          <div className="detalle">
+            <h3>Datos de la Mascota</h3>
+            <p>Nombre: {mascota.nombre}</p>
+            <p>Raza: {mascota.raza}</p>
+            <p>Especie: {mascota.especie}</p>
+            <p>Fecha de nacimiento: {mascota.fecha}</p>
+            <p>Peso: {mascota.peso}kg</p>
+          </div>
+
+          <div className="eventos">
+            <h3>Mis Eventos</h3>
+            {/* Aquí irían los eventos */}
+            <a
+              onClick={() => history.push('/agendar-evento')}
+              className="boton-agregar"
+            >
+              +
+            </a>
+          </div>
+
+          <div className="buttons">
+            <button
+              className="boton"
+              onClick={() => history.push(`/editar-mascota`)}
+            >
+              Editar Perfil
+            </button>
+            <button
+              className="boton boton-eliminar"
+              onClick={() => history.push('/perfil-mascota')}
+            >
+              Eliminar Perfil
+            </button>
+          </div>
+        </div>
+      </IonContent>
+      <Footer />
+    </IonPage>
+  );
+};
+
+export default PerfilMascota;

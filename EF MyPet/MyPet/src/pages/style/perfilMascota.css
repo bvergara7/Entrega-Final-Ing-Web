@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef6e4;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-unificado {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgPerfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.detalle {
+    text-align: center;
+    color: #333;  /* Cambiado de gray a un gris más oscuro */
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #000;  /* Asegurando que los títulos sean negros */
+}
+
+.detalle p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #000000;  /* Asegurando que los párrafos sean negros */
+}
+
+.eventos {
+    width: 100%;
+    background-color: #ee7700ab;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bloqueEvento {
+    background-color: #ffdb7c;
+    color: #000;  /* Asegurando que el texto en los eventos sea negro */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.boton-agregar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #2ec4b6;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px dashed #2ec4b6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 10px auto 0;
+}
+
+.boton-agregar:hover {
+    background-color: #e8f7f6;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.boton {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #2ec4b6;
+    color: white;  /* Mantenemos el texto de los botones en blanco para mejor contraste */
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
+
+.boton-eliminar {
+    background-color: #ff5400;
+    color: white;  /* Mantenemos el texto del botón eliminar en blanco */
+}

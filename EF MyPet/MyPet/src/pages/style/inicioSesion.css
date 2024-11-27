@@ -1,0 +1,88 @@
+/* Estilo general de la página */
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a0c5ff, #ffc5d9, #c5ffc7);
+}
+/* Contenedor del formulario */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Título */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para las etiquetas y los campos de entrada */
+.input-container {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Mensaje de error en rojo */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.custom-button {
+  background-color: #ffbe0b; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para transformaciones y sombras */
+}
+
+/* Efecto al pasar el cursor */
+.custom-button:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del botón */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Agrega sombra al botón */
+}
+
+
+.register-text {
+  margin-top: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.register-link {
+  color: #ffbe0b; /* Utilizando el color principal */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+

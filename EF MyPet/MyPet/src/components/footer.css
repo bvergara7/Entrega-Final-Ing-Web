@@ -1,0 +1,33 @@
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centrar el texto */
+    position: relative; 
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
+    max-height: 100px;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    margin-top: -20px;
+    
+  }
+  
+  .footer-links {
+    margin-top: 10px; /* Espaciado superior entre texto y enlaces */
+    margin-bottom: -10px;
+  }
+  
+  .footer-link {
+    color: #ffbe0b; /* Color de los enlaces */
+    margin: 0 15px; /* Espaciado entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Subrayar al pasar el cursor */
+  }
+  
