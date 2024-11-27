@@ -8,7 +8,7 @@ Repositorio de Entrega Final, Proyecto Final Ingenieria Web - INF3245
 
 - EF.1 Implementar las funcionalidades propuestas en la EP1.
 - EF.2 Implementar el inicio y cierre de sesión.
-- EF.3 Implementar el backend de la aplicaci´on, con enfoque de API REST, y utilizando el framework y la base de datos seleccionadas, con conexi´on entre ambos. Se deben considerar los m´etodos HTTP
+- EF.3 Implementar el backend de la aplicacion, con enfoque de API REST, y utilizando el framework y la base de datos seleccionadas, con conexi´on entre ambos. Se deben considerar los metodos HTTP
   (GET, POST, PUT, DELETE). Algunos frameworks de ejemplo son: Express.js, Nest.js, Spring Boot, Flask, entre otros.
 - EF.4 Implementar la conexión entre datos y logica.
 - EF.5 Implementar la conexión entre el frontend y el backend, utilizando el concepto de API REST, y consumir los datos desde el backend y mostrarlos en el frontend.
