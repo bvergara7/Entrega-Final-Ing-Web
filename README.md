@@ -54,7 +54,7 @@ GET /usuario/:id: Devuelve los datos del usuario solicitado si el token es váli
 
 PUT /usuario/:id: Permite al usuario autenticado actualizar su información (nombre, email, contraseña, foto de perfil, región).
 
-##Mascotas
+## Mascotas
 POST /mascota: Crea un registro de mascota asociado al usuario autenticado. Genera un código único de vinculación. Requiere nombre y especie.
 
 GET /mascotas: Devuelve la lista de mascotas asociadas al usuario autenticado.
@@ -62,6 +62,7 @@ GET /mascotas: Devuelve la lista de mascotas asociadas al usuario autenticado.
 GET /mascotas/:id: Devuelve información detallada de una mascota específica si pertenece al usuario autenticado.
 
 PUT /mascotas/:id: Actualiza los datos de una mascota del usuario autenticado.
+
 POST /mascotas/vincular: Permite vincular una mascota existente a un usuario utilizando el codigoVinculacion.
 
 ## Eventos: 
