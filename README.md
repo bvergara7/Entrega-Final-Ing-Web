@@ -89,6 +89,8 @@ Se han implementado varios aspectos clave de seguridad web que garantizan la pro
 
 - Validación y Sanitización de Entradas: Se validan y sanitizan los datos recibidos en las solicitudes del cliente, como emails y contraseñas, para evitar inyecciones SQL o ataques de tipo XSS (Cross-Site Scripting). Esto incluye el uso de expresiones regulares para verificar formatos y consultas parametrizadas en las interacciones con la base de datos.
 
+- Captcha: La pagina de registro de sesion posee un captcha, el cual se utiliza para verificar si el usuario es humano o bot, lo implementamos, ya que en muchas paginas se posee este tipo de validacion de seguridad al momento de ingresar o inicio de sesion.
+
   
 
 
